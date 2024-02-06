@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build --prefix book-store-react-redux-thunk"
+  publish = "book-store-react-redux-thunk/dist"
+
+[[redirects]]
+  from = "/api/books/*"
+  to = "http://localhost:9000/books/:splat"
+  status = 200
+  force = true
+
+
+[dev]
+  command = "npm run dev --prefix book-store-react-redux-thunk"
